@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+    <!-- Link to your CSS file -->
+    <!-- <link rel="stylesheet" type="text/css" href="options.css"> -->
+</head>
+<body>
+    <div>
+        <label for="personal">Personal Goal and Passion</label>
+    </div>
+    <div>
+        <textarea type="text" id="personal"></textarea>
+    </div>
+    <div>
+        <label for="addiction">Goal to Improve Addiction:</label>
+    </div>
+    <div>
+        <textarea type="text" id="addiction"></textarea>
+    </div>
+    <div>
+        <button id="getPlan">Get Plan</button>
+    </div>
+    <div>
+        <button id="clearPlan">Clear Plan</button>
+    </div>
+    <div>
+        <p>Your Plan:</p>
+        <div id="resultDisplayArea"></div>
+    </div>
+
+    <hr>
+    <label for="daySelect">Select Day:</label>
+    <select id="daySelect">
+        <!-- Options will be dynamically populated -->
+    </select>
+    <button id="setDayPlan">Save Day Plan</button>
+    <div>Today's Plan</div>
+    <p id="rule"></p>
+    <p id="actionItem"></p>
+    <p id="limit"></p>
+    <hr>
+    <div>
+        <label>
+            <input type="checkbox" id="hideRecommendations"> Full Focus Mode (hide home page and side bar recommendations) 
+          </label>
+    </div>
+    <div>
+        <label for="apiKey">OpenAI API Key:</label>
+        <input type="password" id="apiKey">
+    </div>
+    <div>
+        <button id="save">Save</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
